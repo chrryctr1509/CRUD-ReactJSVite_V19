@@ -1,105 +1,39 @@
-# Task Management App
+# CRUD App - React JS + Vite (v19)
 
-Aplikasi task management sederhana menggunakan React 19.2, Vite, Ant Design, Tailwind CSS, TanStack Query, Zustand, Axios, React Final Form, Yup, dan React Toastify.
+A full-featured CRUD application built with React JS and Vite.
 
-## Menjalankan Aplikasi
+## Tech Stack
+- React JS
+- Vite
+- JavaScript
 
-Install dependency:
+## Features
+- Create, Read, Update, Delete operations
+- Fast development with Vite HMR
+- React component-based architecture
 
+## Getting Started
+
+### Prerequisites
+- Node.js >= 16
+- npm or yarn
+
+### Installation
 ```bash
+git clone https://github.com/nurmuhamadsoleh/CRUD-ReactJSVite_V19
+cd CRUD-ReactJSVite_V19
 npm install
 ```
 
-Jalankan development server:
-
+### Development
 ```bash
 npm run dev
 ```
 
-Build production:
-
+### Build
 ```bash
 npm run build
 ```
 
-## Environment
-
-Contoh konfigurasi tersedia di `.env.example`.
-
-```env
-VITE_API_URL=https://jsonplaceholder.typicode.com/todos
-VITE_STORAGE_KEY=task-management-app.local-tasks.v2
-VITE_DELETED_STORAGE_KEY=task-management-app.deleted-task-ids.v2
-```
-
-## Menu Aplikasi
-
-### Dashboard
-
-Menu `Dashboard` menampilkan ringkasan jumlah task:
-
-- Total task
-- Task completed
-- Task pending
-
-Menu ini berguna untuk melihat kondisi task secara cepat.
-
-### Tasks
-
-Menu `Tasks` adalah halaman utama untuk mengelola task.
-
-Fitur yang tersedia:
-
-- Menampilkan daftar task dari API
-- Menambahkan task baru
-- Mengubah status task menjadi completed atau pending
-- Menghapus task
-- Filter task berdasarkan `All`, `Completed`, dan `Pending`
-- Search task menggunakan debounce
-- Pagination menggunakan Ant Design
-- Validasi input menggunakan React Final Form dan Yup
-- Notifikasi sukses/error menggunakan React Toastify
-
-Search dan filter dikirim sebagai query API. Data task baru disimpan melalui state global Zustand agar tetap tersedia saat dicari atau difilter.
-
-### Reports
-
-Menu `Reports` menampilkan laporan progress task:
-
-- Progress completed
-- Progress pending
-- Jumlah task selesai
-- Jumlah task belum selesai
-
-Menu ini dipakai untuk melihat perbandingan status task dalam bentuk ringkasan visual.
-
-### Settings
-
-Menu `Settings` berisi pengaturan tampilan aplikasi:
-
-- Compact cards
-- Toggle sidebar laptop
-
-Pengaturan sidebar dapat digunakan untuk membuka atau menutup sidebar pada tampilan laptop.
-
-## Responsive Preview
-
-Pada header setiap menu tersedia tombol:
-
-- `Mobile`
-- `Tablet`
-- `Laptop`
-
-Tombol ini digunakan untuk melihat penyesuaian layout berdasarkan device preview yang dipilih.
-
-
-## Fetch API
-
-Fetch API menggunakan Axios dan TanStack Query.
-
-Query task mendukung:
-
-- `title` untuk search
-- `completed=true` untuk completed
-- `completed=false` untuk pending
-- `_page` dan `_per_page` untuk pagination
+## Contributing
+Pull requests are welcome!
